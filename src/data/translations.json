@@ -1,0 +1,102 @@
+{
+  "id": {
+    "seo": {
+      "title": "CreativeBro | Jasa Pembuatan Website & Aplikasi Mobile Premium",
+      "description": "CreativeBro adalah studio kreatif yang fokus membangun website (React, Laravel) dan aplikasi mobile (Flutter) yang cepat, responsif, dan siap meroketkan bisnis lu.",
+      "keywords": "jasa pembuatan website, bikin aplikasi android, flutter jakarta, react developer indonesia, creativebro, web portofolio, laravel developer"
+    },
+    "navbar": {
+      "services": "LAYANAN",
+      "work": "PORTOFOLIO",
+      "about": "TENTANG",
+      "cta": "HUBUNGI KAMI ->"
+    },
+    "hero": {
+      "badge": "🚀 SEKARANG TERSEDIA UNTUK PROYEK BARU",
+      "headline_1": "KAMI MEMBANGUN PENGALAMAN DIGITAL",
+      "headline_accent": "YANG GAK MEMBOSANKAN.",
+      "subheadline": "CreativeBro adalah tempat di mana baris kode React, Laravel, dan Flutter disulap menjadi produk digital yang mahal, responsif, dan siap meroketkan bisnis lu.",
+      "cta_primary": "Lihat Portofolio",
+      "cta_secondary": "Konsultasi Gratis"
+    },
+    "services": {
+      "title": "APA YANG BISA KAMI BANTU?",
+      "web_tag": "WEB",
+      "web_title": "Jasa Buat Website React & Laravel",
+      "web_desc": "Bikin landing page, web portofolio, sampai sistem custom yang cepat dan SEO-friendly pake React, Tailwind, dan Laravel.",
+      "mobile_tag": "MOBILE",
+      "mobile_title": "Jasa Buat Aplikasi Flutter Android & iOS",
+      "mobile_desc": "Pengembangan aplikasi Android dan iOS yang smooth, native-look, dan siap rilis ke Play Store pake Flutter.",
+      "backend_tag": "BACKEND",
+      "backend_title": "Jasa Pembuatan Backend & Database",
+      "backend_desc": "Arsitektur database yang solid, aman, dan integrasi API yang seamless menggunakan MySQL, Firebase, atau Supabase.",
+      "learn_more": "PELAJARI LEBIH LANJUT ->"
+    },
+    "portfolio": {
+      "title": "KUMPULAN PROYEK KAMI",
+      "subtitle": "Kumpulan proyek sukses yang kami bangun dengan dedikasi penuh.",
+      "badge": "STUDI KASUS",
+      "cta_view": "Lihat Proyek ->"
+    },
+    "contact": {
+      "headline": "PUNYA IDE PROYEK <br />YANG MAU DIEKSEKUSI?",
+      "subheadline": "Konsultasikan kebutuhan aplikasi atau website bisnis lu secara gratis. Klik tombol di bawah dan mari kita obrolin langsung!",
+      "cta_button": "CHAT VIA WHATSAPP SEKARANG 📱"
+    },
+    "whatsapp": {
+      "cta": "Ingin berkonsultasi untuk rencana pembuatan website Anda? Tekan tombol Call to Action di kiri bawah untuk terhubung dengan tim konsultan kami.",
+      "operational": "Jam Operasional: 09.00-22.00 WIB (Senin - Sabtu)",
+      "chat_now": "Call to Action"
+    }
+  },
+  "en": {
+    "seo": {
+      "title": "CreativeBro | Premium Web & Mobile App Development Services",
+      "description": "CreativeBro is a creative studio focused on building fast, responsive, and high-converting websites (React, Laravel) and mobile apps (Flutter).",
+      "keywords": "web development services, mobile app development, flutter developer, react developer, creativebro portfolio, custom software development"
+    },
+    "navbar": {
+      "services": "SERVICES",
+      "work": "PORTFOLIO",
+      "about": "ABOUT",
+      "cta": "LET'S TALK ->"
+    },
+    "hero": {
+      "badge": "🚀 NOW AVAILABLE FOR NEW PROJECTS",
+      "headline_1": "WE BUILD DIGITAL EXPERIENCES",
+      "headline_accent": "THAT DON'T SUCK.",
+      "subheadline": "CreativeBro is where lines of React, Laravel, and Flutter code are crafted into premium, responsive digital products ready to scale your business.",
+      "cta_primary": "View Our Work",
+      "cta_secondary": "Free Consultation"
+    },
+    "services": {
+      "title": "HOW CAN WE HELP YOU?",
+      "web_tag": "WEB",
+      "web_title": "React & Laravel Web Development Services",
+      "web_desc": "Building landing pages, portfolio websites, and high-speed, SEO-friendly custom systems using React, Tailwind, and Laravel.",
+      "mobile_tag": "MOBILE",
+      "mobile_title": "Flutter Android & iOS Mobile App Development",
+      "mobile_desc": "Developing smooth, native-looking Android and iOS applications ready for Play Store deployment using Flutter.",
+      "backend_tag": "BACKEND",
+      "backend_title": "Backend Engineering & Database Architecture",
+      "backend_desc": "Solid and secure database architecture with seamless API integration using MySQL, Firebase, or Supabase.",
+      "learn_more": "LEARN MORE ->"
+    },
+    "portfolio": {
+      "title": "SELECTED WORK",
+      "subtitle": "A collection of successful projects built with absolute dedication.",
+      "badge": "CASE STUDY",
+      "cta_view": "View Project ->"
+    },
+    "contact": {
+      "headline": "HAVE A PROJECT IDEA <br />READY TO EXECUTE?",
+      "subheadline": "Consult your business website or application needs for free. Click the button below and let's discuss!",
+      "cta_button": "CHAT VIA WHATSAPP NOW 📱"
+    },
+    "whatsapp": {
+      "cta": "Want to consult about your website development plan? Press the Call to Action button on the bottom left to connect with our consulting team.",
+      "operational": "Operational Hour: 09.00-22.00 WIB (Monday - Saturday)",
+      "chat_now": "Call to Action"
+    }
+  }
+}
