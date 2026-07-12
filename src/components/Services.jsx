@@ -6,22 +6,46 @@ export default function Services() {
 
     const servicesList = [
         {
-            tag: t('services.web_tag'),
+            tag: "WEB",
             title: t('services.web_title'),
             desc: t('services.web_desc'),
-            color: 'bg-brutalAmber'
+            color: 'bg-brutalAmber',
+            link: '#/project/tromet'
         },
         {
-            tag: t('services.mobile_tag'),
+            tag: "MOBILE",
             title: t('services.mobile_title'),
             desc: t('services.mobile_desc'),
-            color: 'bg-white'
+            color: 'bg-white',
+            link: '#/project/maintpro'
         },
         {
-            tag: t('services.backend_tag'),
+            tag: "BACKEND",
             title: t('services.backend_title'),
             desc: t('services.backend_desc'),
-            color: 'bg-brutalSlate'
+            color: 'bg-brutalSlate',
+            link: '#contact'
+        },
+        {
+            tag: "EDITING",
+            title: t('services.video_title'),
+            desc: t('services.video_desc'),
+            color: 'bg-brutalAmber',
+            link: '#/services/video'
+        },
+        {
+            tag: "DESIGN",
+            title: t('services.design_title'),
+            desc: t('services.design_desc'),
+            color: 'bg-white',
+            link: '#/services/design'
+        },
+        {
+            tag: "PRODUCTION",
+            title: t('services.production_title'),
+            desc: t('services.production_desc'),
+            color: 'bg-brutalSlate',
+            link: '#contact'
         }
     ];
 
@@ -32,7 +56,7 @@ export default function Services() {
                     {t('services.title')}
                 </h2>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {servicesList.map((item, index) => (
                         <div key={index} className="bg-brutalCard p-8 border-4 border-brutalDark shadow-brutal hover:shadow-brutal-amber transition-all duration-300 flex flex-col justify-between">
                             <div>
@@ -42,8 +66,10 @@ export default function Services() {
                                 <h2 className="text-2xl font-black uppercase mb-4 text-brutalDark">{item.title}</h2>
                                 <p className="text-brutalDark font-medium leading-relaxed">{item.desc}</p>
                             </div>
-                            <div className="mt-8 font-bold text-sm text-brutalAmber cursor-pointer hover:underline">
-                                {t('services.learn_more').replace('->', '→')}
+                            <div className="mt-8">
+                                <a href={item.link} className="font-bold text-sm text-brutalAmber hover:underline inline-block">
+                                    {t('services.learn_more')}
+                                </a>
                             </div>
                         </div>
                     ))}

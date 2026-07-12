@@ -21,22 +21,61 @@
     },
     "services": {
       "title": "APA YANG BISA KAMI BANTU?",
-      "web_tag": "WEB",
-      "web_title": "Jasa Buat Website React & Laravel",
+      "web_title": "JASA BUAT WEBSITE REACT & LARAVEL",
       "web_desc": "Bikin landing page, web portofolio, sampai sistem custom yang cepat dan SEO-friendly pake React, Tailwind, dan Laravel.",
-      "mobile_tag": "MOBILE",
-      "mobile_title": "Jasa Buat Aplikasi Flutter Android & iOS",
+      "mobile_title": "JASA BUAT APLIKASI FLUTTER ANDROID & IOS",
       "mobile_desc": "Pengembangan aplikasi Android dan iOS yang smooth, native-look, dan siap rilis ke Play Store pake Flutter.",
-      "backend_tag": "BACKEND",
-      "backend_title": "Jasa Pembuatan Backend & Database",
+      "backend_title": "JASA PEMBUATAN BACKEND & DATABASE",
       "backend_desc": "Arsitektur database yang solid, aman, dan integrasi API yang seamless menggunakan MySQL, Firebase, atau Supabase.",
-      "learn_more": "PELAJARI LEBIH LANJUT ->"
+      "video_title": "VIDEO EDITING & MOTION PRODUCTION",
+      "video_desc": "Bikin konten TikTok/Reels lu FYP dan video company profile bisnis lu kelihatan sinematik, interaktif, & profesional.",
+      "design_title": "GRAPHIC DESIGN & BRANDING",
+      "design_desc": "Mulai dari desain feed Instagram bulanan, logo brand, sampai pitch deck buat kebutuhan presentasi ke investor.",
+      "production_title": "PHOTOGRAPHY & VIDEOGRAPHY",
+      "production_desc": "Pengambilan aset visual langsung di lapangan. Mulai dari foto produk komersial, dokumentasi event, hingga produksi video profile perusahaan dengan gear standar industri.",
+      "learn_more": "PELAJARI LEBIH LANJUT →"
     },
     "portfolio": {
       "title": "KUMPULAN PROYEK KAMI",
       "subtitle": "Kumpulan proyek sukses yang kami bangun dengan dedikasi penuh.",
-      "badge": "STUDI KASUS",
-      "cta_view": "Lihat Proyek ->"
+      "view_project": "LIHAT PROYEK →",
+      "projects": [
+        {
+          "id": "cmms",
+          "title": "MAINTPRO CMMS",
+          "category": "MOBILE APP / FLUTTER & MYSQL",
+          "desc": "Computerized Maintenance Management System untuk manajemen aset dan monitoring maintainer industri.",
+          "problem": "Pencatatan maintenance masih manual menggunakan kertas sehingga laporan sering hilang dan respon lambat.",
+          "solution": "Membangun aplikasi Android berbasis Flutter dan database MySQL untuk pelaporan kerusakan mesin secara real-time langsung dari lapangan.",
+          "result": ["Respon perbaikan 200% lebih cepat", "Biaya down-time mesin berkurang 35%", "Data riwayat maintenance 100% aman"]
+        },
+        {
+          "id": "tromet",
+          "title": "TRO MET INDONESIA",
+          "category": "WEB LANDING PAGE / MEDICAL INDUSTRY",
+          "desc": "Web landing page premium untuk produk trolley medis dengan desain interaktif, performa optimal, dan dukungan multi-bahasa.",
+          "problem": "Tromindo (Tromet Indonesia) membutuhkan platform web landing page profesional untuk memasarkan produk trolley medis berkualitas tinggi ke pasar global.",
+          "solution": "CreativeBro merancang dan membangun platform web landing page premium menggunakan React dan Tailwind CSS dengan sistem translasi multi-bahasa yang dinamis (Inggris, Mandarin, Arab).",
+          "result": [
+            "Tampilan visual katalog trolley medis tersaji secara eksklusif",
+            "Meningkatkan conversion rate leads B2B dari luar negeri",
+            "Web super cepat, responsif, dan ramah SEO"
+          ]
+        },
+        {
+          "id": "coopin",
+          "title": "COOPIN MOBILE AD VIDEO CAMPAIGN",
+          "category": "VIDEO EDITING / CAMPAIGN PRODUCTION",
+          "desc": "Produksi video campaign komersial dan editing motion graphic untuk optimasi iklan mobile.",
+          "problem": "Kebutuhan visual iklan digital yang dituntut memiliki retention rate tinggi dan transisi yang dinamis agar konversi performa iklan meningkat.",
+          "solution": "Merancang editing video kreatif dengan ritme cepat, color grading modern, serta penambahan motion graphics interaktif untuk menarik audiens dalam 3 detik pertama.",
+          "result": [
+            "Click-Through Rate (CTR) iklan naik signifikan",
+            "Audience retention rate video mencapai target",
+            "Aset visual iklan siap pakai di berbagai platform mobile ads"
+          ]
+        }
+      ]
     },
     "contact": {
       "headline": "PUNYA IDE PROYEK <br />YANG MAU DIEKSEKUSI?",
@@ -71,22 +110,61 @@
     },
     "services": {
       "title": "HOW CAN WE HELP YOU?",
-      "web_tag": "WEB",
-      "web_title": "React & Laravel Web Development Services",
-      "web_desc": "Building landing pages, portfolio websites, and high-speed, SEO-friendly custom systems using React, Tailwind, and Laravel.",
-      "mobile_tag": "MOBILE",
-      "mobile_title": "Flutter Android & iOS Mobile App Development",
-      "mobile_desc": "Developing smooth, native-looking Android and iOS applications ready for Play Store deployment using Flutter.",
-      "backend_tag": "BACKEND",
-      "backend_title": "Backend Engineering & Database Architecture",
-      "backend_desc": "Solid and secure database architecture with seamless API integration using MySQL, Firebase, or Supabase.",
-      "learn_more": "LEARN MORE ->"
+      "web_title": "REACT & LARAVEL WEB DEVELOPMENT",
+      "web_desc": "Building high-speed, SEO-friendly custom websites and portfolios using React, Tailwind, and Laravel.",
+      "mobile_title": "FLUTTER ANDROID & IOS MOBILE APPS",
+      "mobile_desc": "Developing smooth, native-looking cross-platform applications ready for Play Store deployment using Flutter.",
+      "backend_title": "BACKEND & DATABASE DEVELOPMENT",
+      "backend_desc": "Solid, secure database architecture and seamless API integration using MySQL, Firebase, or Supabase.",
+      "video_title": "VIDEO EDITING & MOTION PRODUCTION",
+      "video_desc": "Crafting cinematic, interactive, and professional TikTok/Reels and company profile videos to boost engagement.",
+      "design_title": "GRAPHIC DESIGN & BRANDING",
+      "design_desc": "From monthly Instagram feeds and brand logos to high-converting pitch decks for investor presentations.",
+      "production_title": "PHOTOGRAPHY & VIDEOGRAPHY",
+      "production_desc": "On-field visual asset production. Ranging from commercial product photography and event documentation to corporate video profiles using industry-standard gear.",
+      "learn_more": "LEARN MORE →"
     },
     "portfolio": {
-      "title": "SELECTED WORK",
+      "title": "OUR SELECTED WORK",
       "subtitle": "A collection of successful projects built with absolute dedication.",
-      "badge": "CASE STUDY",
-      "cta_view": "View Project ->"
+      "view_project": "VIEW PROJECT →",
+      "projects": [
+        {
+          "id": "cmms",
+          "title": "MAINTPRO CMMS",
+          "category": "MOBILE APP / FLUTTER & MYSQL",
+          "desc": "Computerized Maintenance Management System for industrial asset management and maintainer monitoring.",
+          "problem": "Maintenance records were paper-based, causing lost reports and delayed responses.",
+          "solution": "Developed a Flutter Android app integrated with a MySQL database for real-time machine breakdown reporting directly from the field.",
+          "result": ["200% faster repair response time", "35% reduction in machine down-time costs", "100% secure maintenance history logging"]
+        },
+        {
+          "id": "tromet",
+          "title": "TRO MET INDONESIA",
+          "category": "WEB LANDING PAGE / MEDICAL INDUSTRY",
+          "desc": "Premium web landing page for medical trolley products with interactive design, optimal performance, and multi-language support.",
+          "problem": "Tromet Indonesia needed a professional web landing page platform to market high-quality medical trolley products to the global market.",
+          "solution": "CreativeBro designed and built a premium web landing page using React and Tailwind CSS with a dynamic multi-language translation system (English, Mandarin, Arabic).",
+          "result": [
+            "Exclusive visual display of medical trolley catalog",
+            "Increased B2B leads conversion rate from global clients",
+            "Super fast, responsive, and SEO-friendly website"
+          ]
+        },
+        {
+          "id": "coopin",
+          "title": "COOPIN MOBILE AD VIDEO CAMPAIGN",
+          "category": "VIDEO EDITING / CAMPAIGN PRODUCTION",
+          "desc": "Commercial video campaign production and motion graphic editing for mobile ad optimization.",
+          "problem": "The need for digital ad visuals that demand high retention rates and dynamic transitions to boost ad conversion performance.",
+          "solution": "Designed a fast-paced creative video edit with modern color grading and interactive motion graphics to hook audiences within the first 3 seconds.",
+          "result": [
+            "Significant increase in ad Click-Through Rate (CTR)",
+            "Video audience retention rate met the target",
+            "Ad visual assets fully optimized for various mobile ad platforms"
+          ]
+        }
+      ]
     },
     "contact": {
       "headline": "HAVE A PROJECT IDEA <br />READY TO EXECUTE?",
