@@ -13,7 +13,15 @@ export default function VideoDetail() {
                 {/* Video Player */}
                 <div className="border-4 border-brutalDark p-2 bg-white shadow-brutal-amber mb-8">
                     <div className="aspect-video bg-black flex items-center justify-center overflow-hidden">
-                        <video controls className="w-full h-full object-contain" loop autoPlay muted>
+                        <video 
+                            controls 
+                            className="w-full h-full object-contain" 
+                            loop 
+                            autoPlay 
+                            muted
+                            aria-label="Coopin Mobile Ad Video Showcase"
+                            title="Coopin Mobile Ad Video Showcase"
+                        >
                             <source src={coopinVideo} type="video/webm" />
                             Your browser does not support the video tag.
                         </video>
