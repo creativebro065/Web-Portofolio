@@ -30,8 +30,11 @@ export default function Contact() {
                         {language === 'id' ? 'KIRIM EMAIL ✉️' : 'EMAIL US ✉️'}
                     </a>
                 </div>
-                <div className="mt-8 text-sm font-bold text-gray-400">
-                    WA: 085714108067 | Gmail: creativebro065@gmail.com
+                <div className="mt-8 text-sm font-bold text-gray-400 space-y-2">
+                    <div>WA: 085714108067 | Gmail: creativebro065@gmail.com</div>
+                    <div className="max-w-md mx-auto leading-relaxed uppercase tracking-wider text-xs">
+                        Alamat: Jl. Bintang No.96, RT.005/RW.002, Sudimara Pinang, Kec. Pinang, Kota Tangerang, Banten 15145
+                    </div>
                 </div>
             </div>
         </section>
