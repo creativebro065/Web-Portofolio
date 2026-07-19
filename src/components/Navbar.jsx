@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -9,12 +10,12 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 bg-brutalDark/90 backdrop-blur-md border-b-4 border-brutalDark px-3 sm:px-6 py-3 sm:py-4">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 {/* Logo Container */}
-                <a href="#/" className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity">
+                <Link to="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity">
                     <img src={logo} alt="CreativeBro Logo" className="h-8 w-8 sm:h-10 sm:w-10 border-2 border-brutalDark shadow-brutal" />
                     <div className="text-white font-black text-xs sm:text-lg md:text-xl tracking-wider uppercase flex items-baseline whitespace-nowrap">
                         CREATIVE <span className="text-brutalAmber text-sm sm:text-xl md:text-2xl font-black ml-1">BRO</span>
                     </div>
-                </a>
+                </Link>
 
                 {/* Menu Items (Teks Putih) */}
                 <div className="hidden md:flex items-center gap-8 font-bold text-sm tracking-wide text-white">

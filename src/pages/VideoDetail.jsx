@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import coopinVideo from '../assets/Vidio Editing/Coopin Mobile Ad.webm';
 
 export default function VideoDetail() {
     return (
         <div className="min-h-screen bg-brutalDark text-white p-6 md:p-12 font-sans selection:bg-brutalAmber selection:text-brutalDark">
             <div className="max-w-4xl mx-auto">
-                <a href="#/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
+                <Link to="/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
                     &larr; Kembali ke Portofolio
-                </a>
+                </Link>
                 <h1 className="text-4xl md:text-5xl font-black uppercase mb-8 tracking-tight">// VIDEO EDITING & MOTION PRODUCTION</h1>
 
                 {/* Video Player */}

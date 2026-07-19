@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function Services() {
@@ -10,14 +11,14 @@ export default function Services() {
             title: t('services.web_title'),
             desc: t('services.web_desc'),
             color: 'bg-brutalAmber',
-            link: '#/project/tromet'
+            link: '/project/tromet'
         },
         {
             tag: "MOBILE",
             title: t('services.mobile_title'),
             desc: t('services.mobile_desc'),
             color: 'bg-white',
-            link: '#/project/maintpro'
+            link: '/project/maintpro'
         },
         {
             tag: "BACKEND",
@@ -31,14 +32,14 @@ export default function Services() {
             title: t('services.video_title'),
             desc: t('services.video_desc'),
             color: 'bg-brutalAmber',
-            link: '#/services/video'
+            link: '/services/video'
         },
         {
             tag: "DESIGN",
             title: t('services.design_title'),
             desc: t('services.design_desc'),
             color: 'bg-white',
-            link: '#/services/design'
+            link: '/services/design'
         },
         {
             tag: "PRODUCTION",
@@ -67,9 +68,15 @@ export default function Services() {
                                 <p className="text-brutalDark font-medium leading-relaxed">{item.desc}</p>
                             </div>
                             <div className="mt-8">
-                                <a href={item.link} className="font-bold text-sm text-brutalAmber hover:underline inline-block">
-                                    {t('services.learn_more')}
-                                </a>
+                                {item.link.startsWith('/') ? (
+                                    <Link to={item.link} className="font-bold text-sm text-brutalAmber hover:underline inline-block">
+                                        {t('services.learn_more')}
+                                    </Link>
+                                ) : (
+                                    <a href={item.link} className="font-bold text-sm text-brutalAmber hover:underline inline-block">
+                                        {t('services.learn_more')}
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}

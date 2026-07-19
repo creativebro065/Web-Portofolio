@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function Portfolio() {
@@ -41,18 +42,18 @@ export default function Portfolio() {
                             </div>
                         </div>
                         <div className="p-6 bg-brutalCard pt-0">
-                            <a 
-                                href={
+                            <Link 
+                                to={
                                     project.id === 'cmms' 
-                                        ? '#/project/maintpro' 
+                                        ? '/project/maintpro' 
                                         : project.id === 'coopin' 
-                                            ? '#/services/video' 
-                                            : '#/project/tromet'
+                                            ? '/services/video' 
+                                            : '/project/tromet'
                                 } 
                                 className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal hover:bg-brutalAmber hover:text-brutalDark transition-all uppercase tracking-wider"
                             >
                                 {t('portfolio.view_project')}
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}

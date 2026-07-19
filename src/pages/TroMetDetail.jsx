@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import trometMain from '../assets/TrometIndonesia/Trometindonesia1.png';
 import trometDetail from '../assets/TrometIndonesia/Trometindonesia2.png';
 
@@ -8,9 +9,9 @@ export default function TroMetDetail() {
     return (
         <div className="min-h-screen bg-brutalDark text-white p-6 md:p-12 font-sans selection:bg-brutalAmber selection:text-brutalDark relative">
             <div className="max-w-4xl mx-auto">
-                <a href="#/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
+                <Link to="/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
                     &larr; Kembali ke Portofolio
-                </a>
+                </Link>
 
                 <span className="bg-brutalAmber text-brutalDark font-black text-xs px-3 py-1 border-2 border-brutalDark uppercase tracking-widest block w-max mb-4">
                     WEB LANDING PAGE / MEDICAL INDUSTRY

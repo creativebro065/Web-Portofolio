@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import img5 from '../assets/Graphic Desain/5.png';
 import img6 from '../assets/Graphic Desain/6.png';
 import img7 from '../assets/Graphic Desain/7.png';
@@ -25,9 +26,9 @@ export default function DesignDetail() {
     return (
         <div className="min-h-screen bg-brutalDark text-white p-6 md:p-12 font-sans selection:bg-brutalAmber selection:text-brutalDark relative">
             <div className="max-w-6xl mx-auto">
-                <a href="#/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
+                <Link to="/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
                     &larr; Kembali ke Portofolio
-                </a>
+                </Link>
                 <h1 className="text-4xl md:text-5xl font-black uppercase mb-8 tracking-tight">// GRAPHIC DESIGN & BRANDING GALLERY</h1>
 
                 {/* Grid Gallery Branding */}

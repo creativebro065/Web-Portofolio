@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import maintproMain from '../assets/MaintproCMMS/MaintproCMMS1.png';
 import maintproFeature from '../assets/MaintproCMMS/MaintproCMMS2.png';
 
@@ -9,9 +10,9 @@ export default function MaintProDetail() {
         <div className="min-h-screen bg-brutalDark text-white p-6 md:p-12 font-sans selection:bg-brutalAmber selection:text-brutalDark relative">
             <div className="max-w-4xl mx-auto">
                 {/* Back Button */}
-                <a href="#/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
+                <Link to="/" className="inline-block bg-white text-brutalDark font-black text-xs px-4 py-2 border-2 border-brutalDark shadow-brutal mb-8 uppercase tracking-wider hover:bg-brutalAmber transition-colors">
                     &larr; Kembali ke Portofolio
-                </a>
+                </Link>
 
                 {/* Header */}
                 <span className="bg-brutalAmber text-brutalDark font-black text-xs px-3 py-1 border-2 border-brutalDark uppercase tracking-widest block w-max mb-4">

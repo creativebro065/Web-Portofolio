@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -16,33 +17,22 @@ import VideoDetail from './pages/VideoDetail';
 
 function MainApp() {
   const { t } = useLanguage();
-  const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setCurrentPath(window.location.hash || '#/');
-      
-      // If modal is opened, prevent body scrolling for better UX
-      const isModalOpen = window.location.hash.match(/^#\/(project|services)\//);
-      if (isModalOpen) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = 'unset';
-      }
-    };
-
-    // Initial check
-    const isModalOpen = window.location.hash.match(/^#\/(project|services)\//);
+    // If modal is opened, prevent body scrolling for better UX
+    const isModalOpen = currentPath.startsWith('/project/') || currentPath.startsWith('/services/');
     if (isModalOpen) {
       document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
     }
-
-    window.addEventListener('hashchange', handleHashChange);
     return () => {
-      window.removeEventListener('hashchange', handleHashChange);
       document.body.style.overflow = 'unset';
     };
-  }, []);
+  }, [currentPath]);
 
   return (
     <div className="min-h-screen bg-brutalDark selection:bg-brutalAmber selection:text-brutalDark relative">
@@ -63,11 +53,11 @@ function MainApp() {
       
       <WhatsAppWidget />
 
-      {/* Zero-Dependency Internal React Modal Pop-ups */}
-      {currentPath.startsWith('#/project/maintpro') && (
+      {/* React Router Dom - Internal Modal Pop-ups */}
+      {currentPath === '/project/maintpro' && (
         <div 
           className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-sm flex justify-center p-4 items-start cursor-pointer"
-          onClick={() => window.location.hash = '#/'}
+          onClick={() => navigate('/')}
         >
           <div 
             className="relative w-full max-w-4xl bg-brutalDark border-4 border-brutalDark shadow-brutal-amber rounded-none overflow-hidden my-8 cursor-default"
@@ -78,10 +68,10 @@ function MainApp() {
         </div>
       )}
 
-      {currentPath.startsWith('#/project/tromet') && (
+      {currentPath === '/project/tromet' && (
         <div 
           className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-sm flex justify-center p-4 items-start cursor-pointer"
-          onClick={() => window.location.hash = '#/'}
+          onClick={() => navigate('/')}
         >
           <div 
             className="relative w-full max-w-4xl bg-brutalDark border-4 border-brutalDark shadow-brutal-amber rounded-none overflow-hidden my-8 cursor-default"
@@ -92,10 +82,10 @@ function MainApp() {
         </div>
       )}
 
-      {currentPath.startsWith('#/services/design') && (
+      {currentPath === '/services/design' && (
         <div 
           className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-sm flex justify-center p-4 items-start cursor-pointer"
-          onClick={() => window.location.hash = '#/'}
+          onClick={() => navigate('/')}
         >
           <div 
             className="relative w-full max-w-5xl bg-brutalDark border-4 border-brutalDark shadow-brutal-amber rounded-none overflow-hidden my-8 cursor-default"
@@ -106,10 +96,10 @@ function MainApp() {
         </div>
       )}
 
-      {currentPath.startsWith('#/services/video') && (
+      {currentPath === '/services/video' && (
         <div 
           className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-sm flex justify-center p-4 items-start cursor-pointer"
-          onClick={() => window.location.hash = '#/'}
+          onClick={() => navigate('/')}
         >
           <div 
             className="relative w-full max-w-4xl bg-brutalDark border-4 border-brutalDark shadow-brutal-amber rounded-none overflow-hidden my-8 cursor-default"
@@ -126,7 +116,11 @@ function MainApp() {
 function App() {
   return (
     <LanguageProvider>
-      <MainApp />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<MainApp />} />
+        </Routes>
+      </BrowserRouter>
     </LanguageProvider>
   );
 }
